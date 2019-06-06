@@ -6,7 +6,7 @@ Created on Tue Jun  4 14:31:01 2019
 """
 
 
-a=list(input("Enter numbers separated by comma").split(','));
+a=list(input("Enter numbers separated by spaces").split(' '));
 for i in range(len(a)):
     a[i]=int(a[i]);
     
@@ -14,8 +14,8 @@ ele=int(input("Enter element"));
 pos=-1;    
 beg=0;
 end=len(a)-1;
-while((end>beg) and pos!=-1):
-    m=int((beg+end)/2);
+while(end>beg):
+    m=int((beg+(end-1))/2);
     if a[m]==ele:
         pos=m; break;
     elif(ele>a[m]):
