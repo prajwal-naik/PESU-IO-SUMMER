@@ -14,7 +14,7 @@ ele=int(input("Enter element"));
 pos=-1;    
 beg=0;
 end=len(a)-1;
-while((end>beg) and pos!=-1):
+while(end>beg):
     m=int((beg+end)/2);
     if a[m]==ele:
         pos=m; break;
