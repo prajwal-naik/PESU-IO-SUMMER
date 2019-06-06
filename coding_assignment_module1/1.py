@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun  4 14:18:50 2019
+Created on Thu Jun  6 13:20:07 2019
 
 @author: Prajwal
 """
 
 
-a=list(input("Enter numbers").split(','));
-for i in range(0, len(a)):
+a=input("Enter numbers separated by commas ").split(',');
+for i in range(len(a)):
     a[i]=int(a[i]);
+print("The list is ", a);
 b=tuple(a);
-print(b);
-print(a);
-
-
-
+print("The tuple is ", b);
